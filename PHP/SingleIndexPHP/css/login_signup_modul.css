@@ -1,0 +1,168 @@
+/* Eingabefelder stylen: volle Breite */
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button stylen */
+  button {
+    background: teal;
+    color: white;
+    margin: 10px 0;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50em;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style für den cancel button */
+  .cancelbtn {
+    width: auto;
+    margin: 0 10px;
+    background-color: #f44336;
+    font-size: 1em;
+  }
+  .signbtn.footer, .loginbtn.footer{
+    background-color: transparent;
+    border: 1px solid #006d6d;
+    margin: 0 10px;
+    width: auto;
+    font-size: 1em;
+  }
+  
+  /* Avatar zentrieren und Schließen (x) Positionierung ermöglichen */
+  .login-head, .signup-head {
+    text-align: center;
+    margin-top: 24px;
+    position: relative;   /* um Schließen (x) Button dann "absolute" zu positionieren */
+  }
+  
+  img.avatar {
+    width: 40%;
+  }
+  
+  .login-main, .signup-main {
+    padding: 16px;
+  }
+  
+  .login-footer, .signup-footer{
+      background-color: #222;
+      padding: 20px 16px;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .error{
+    color: #febf01;
+    justify-content: center;
+  }
+
+  span.pwd {
+    padding-top: 16px;
+    color: white;
+  }
+  
+  /* Login Fenster (Hintergrund) */
+  .login-window, .signup-window {
+    display: none;  /* nicht sichtbar */
+    position: fixed; /* fixierte position  */
+    left: 0;  
+    top: 0;
+    z-index: 99; /* über alles legen */
+    width: 100%; /* volle breite */
+    height: 100%; /* volle breite */
+    overflow: auto; /* scrollen erlauben wenn nötig */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* padding-top: 60px; */
+  }
+  
+  /* Login Body/Box */
+  .login-body, .signup-body {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  /* Schließen Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Media Querys für kleine/große Bildschirme */
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+    }
+    .cancelbtn, .signbtn {
+       width: 100%;
+    }
+    img.avatar {
+        width: 40%;
+    }
+  }
+  
+  @media all and (min-width: 468px){
+    .login-body, .signup-body {
+        width: 70%;
+    }
+    img.avatar {
+        width: 30%;
+    }
+
+}
+
+@media all and (min-width: 768px){
+    .login-body, .signup-body {
+        width: 50%;
+    }
+    img.avatar {
+        max-width: 15%;
+    }
+}
+
+
+  
+
+  
+
+  
