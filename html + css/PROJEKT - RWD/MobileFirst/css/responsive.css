@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/*
+
+@title: Mobile First (Responsive Webdesign)
+
+
+@description: 
+CSS basiertes Layout, welches nach dem Prinzip
+Mobile First umgesetzt wurde. Hiermit lassen sich
+responsive Webdesign Konzepte realisieren.
+
+Breakpoints:
+
+	- 0 bis 759 Pixel
+	Das Design unterhalb von 760 px wendet sich in erster Linie an Smartphones � aber auch an Benutzer, die das Browserfenster schmal aufziehen, um neben dem Browser eine weitere Anwendung zu �ffnen.
+	
+	- 760 bis 979 Pixel
+	Die Breite von 760 bis 979 Pixel wendet sich vor allem an Tabletts, aber auch an Browserfenster auf gro�en Monitoren, die nicht den gesamten Monitor einnehmen. (2 Spalten)
+	
+	- 980 bis Unendlich Pixel
+	Die klassische Browserfenstergr��e zwischen 980 bis unendlich Pixel bekommt eine Farbschema und Hintergrundgrafik Anpassung. Auf gro�en Monitoren bei einem gro� aufgezogenem Browserfenster wird den Inhalten eine maximale Breite von 1280 px zugestanden. (3 Spalten)
+
+*/
+
+/****************************/
+/* Grundeinstellung			*/
+/****************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1em;
+}
+
+
+
+/****************************/
+/* Seitenbereich (Wrapper)  */
+/****************************/
+
+#seitenbereich {
+	max-width: 1280px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 95%;
+}
+
+/****************************/
+/* 0 bis 759 Pixel   		*/
+/****************************/
+@media only screen and (max-width: 759px) {
+	div div {
+		background-color: lightblue;
+		border: 5px solid grey;
+		
+		margin: 5px;
+		padding: 10px;
+	}
+	
+	#header, #footer {
+		height: 100px;
+	}	
+}
+
+
+/****************************/
+/* 760 bis 979 Pixel   		*/
+/****************************/
+@media only screen and (min-width: 760px) and (max-width: 979px) {
+	div div {
+		background-color: lightgreen;
+		border: 5px solid darkgreen;
+		
+		margin: 5px;
+		padding: 5px;
+	}
+	
+	#header, #footer {
+		height: 150px;
+	}
+	
+	#sidebar1 {
+		float: left;
+		width: 25%;
+		
+		margin-top: 0;
+	}
+	
+	#sidebar2 {
+		display: none;
+	}
+	
+	#content {
+		margin-left: 25%;
+	}
+	
+	#footer {
+		clear: left;
+	}	
+}
+
+
+/****************************/
+/* 980 bis Unendlich Pixel  */
+/****************************/
+@media only screen and (min-width: 980px) {
+	div div {
+		background-color: lightgrey;
+		border: 5px solid darkgrey;
+		
+		margin: 5px;
+		padding: 5px;
+	}
+	
+	#header, #footer {
+		height: 150px;
+	}
+	
+	#sidebar1 {
+		float: left;
+		width: 25%;
+		
+		margin-top: 0;
+	}
+	
+	#sidebar2 {
+		float: right;
+		width: 25%;
+		
+		margin-top: 0;
+	}
+	
+	#content {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	
+	#footer {
+		clear: both;
+	}	
+}

@@ -1,0 +1,18 @@
+﻿@media only screen and (max-width: 759px) {
+	img {
+		width: 75px;
+		height: auto;
+		
+		vertical-align: middle;
+	}	
+}
+
+
+@media only screen and (min-width: 760px) {
+	img {
+		width: 125px;
+		height: auto;
+		
+		vertical-align: middle;
+	}	
+}

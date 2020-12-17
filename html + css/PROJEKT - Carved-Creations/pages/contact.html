@@ -1,0 +1,143 @@
+<!DOCTYPE html>             <!-- definiert den Dateityp -> HTML-Datei -->
+<html lang="en-US">         <!-- Grundgerüst html-Tag - Start inkl. Festlegung der Hauptsprache -->
+
+    <head>                  <!-- Grundgerüst head-Tag - Start-->
+
+        <meta charset="UTF-8">  <!-- Codierung des Dokumentes in UTF-8 um Sonderzeichen (äöü& etc.) verwenden zu können -->
+
+        <title>Curved Creations - Contact</title>     <!-- Titel der Seite (direkt im Fenster/Tab zu sehen)-->
+
+        <meta name="robots" content="index,follow,archiv">
+        <meta name="description" content="Contact - Curved Creations GmbH" lang="de">
+        <meta name="keywords" content="Moderne Holzmöbel, Holztische, Holzstühle, Bodenbeläge, Raumteiler, Küchenmöbel, Sofa, Bett" lang="de">
+        <meta name="author" content="Wooden Furnitures GmbH" lang="de">
+        <meta name="creator" content="Max Probierer" lang="de">
+        <meta name="date" content="2020-05-28T16:00:00+01:00">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+        <link rel="stylesheet" href="../css/design4all.css" type="text/css">         <!-- Einbindung einer externen CSS-Datei als Stylesheet -->
+        <link rel="stylesheet" href="../css/design-contact.css" type="text/css">         <!-- Einbindung einer externen CSS-Datei als Stylesheet -->
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/png" >     <!-- Setzt ein Favoriten-Icon "Favicon" im Fenster/Tab-->
+        
+
+        <style>                /*Design styles direkt in HTML-Datei einfügen*/
+        </style>
+
+    </head>                  <!-- Grundgerüst head-Tag - End -->
+
+    <body>                  <!-- Grundgerüst body-Tag - End -->
+
+<!-- ************************** Header - Start ************************** -->           
+            <header class="header">
+                <div id="header-wrapper">
+                    <div class="header-box" id="header-logo">
+                        <a href="../index.html"><img src="../img/logo.png" title="Carved Creations GmbH" alt="Firmen Logo - Carved Creations" id=logo></a>
+                    </div>
+
+                    <nav class="header-box" id="header-nav" >
+                        <ul>
+                            <li class="li-nav" id="nav-home"><a href="../index.html">Home</a></li>
+                            <li class="li-nav" id="nav-about"><a href="about.html">About</a></li>
+                            <li class="li-nav" id="nav-gallery"><a href="gallery.html">Gallery</a></li>
+                            <li class="li-nav" id="nav-blog"><a href="blog.html">Blog</a></li>
+                            <li class="li-nav" id="nav-contact"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>             
+            
+            </header>
+<!-- **************************- Header - End ************************** -->
+
+<!-- ************************** Main - Start ************************** -->
+            <main>           <!--role="main" unnecessary for main-->
+                <section class="content-box">
+
+        <!-- ******************** Start Contact Formular ************************** -->
+                
+                    <div class="contact-box-1">
+                                                          
+                        <h1>Contact</h1>
+                        
+                        <p>This website template has been designed by <a href="#" title="Open Free Website Templates">Free Website Templates </a>for you, for free.
+                        You can replace all this text with your own text. You can remove any link to our website from
+                        this website template, you're free to use this website template without linking back to us.
+                        If you're having problems editing this website template, then don't hesitate to ask for help on
+                        the <a href="#" title="Open Forum">Forum</a>.</p>
+                        
+                        
+                            <form method="POST" action="../php/save-info.php" autocomplete="off">                    <!-- sendet (postet) u. speichert die Daten an Server in info.php / Auto-Vervollst. aus-->                    
+                                <fieldset>
+                                    <p class="form">
+                                        <label for="name">Name:</label>
+                                        <input type="text" name="name" id="name" placeholder="Please enter your Name" class="form-field">      <!--mit name-Attribut werden Daten nach Übermittlung identifiziert -->
+                                    </p>
+                                    <p class="form">
+                                        <label for="email">Email Address:</label>
+                                        <input type="email" name="email-adress" id="email" placeholder="Please enter your Mail Adress" class="form-field">
+                                    </p>
+                                    <p class="form"> 
+                                        <label for="phone">Contact Number:</label>
+                                        <input type="tel" name="phone-number" id="phone" placeholder="Please enter your Contact Number" class="form-field">
+                                    </p>   
+                                    <p class="form">
+                                        <label for="massage">Massage:</label>
+                                        <textarea name="massage" id="massage" cols="30" rows="10" class="form-field"></textarea>
+                                    </p>   
+                                    <p class="form">
+                                        <button type="submit" id="btn-submit">Send Massage</button>
+                                        <button type="reset" id="btn-reset">Zurücksetzen</button>
+                                    </p>
+                                </fieldset>
+                            </form>
+                    </div>
+        <!-- ******************** End Contact Formular ************************** -->               
+
+                    <div class="contact-box-2">
+
+                        <img src="../img/chair-small.png" title="Handmade Wood Chair" alt="Holzstuhl mit runden Kanten">
+
+                        <div class="contact-area">
+                            <h3>For Order and Inquiries Please Call:</h3>
+                            <a href="tel:760-962-9541"><strong>760-962-9541</strong></a>
+                            <h3>Or you can visit us at:</h3>
+                            <address><strong>4885 Wilson Street<br>Victorville, CA 92392</strong></address>
+                            <h3>Or just Email us instead at:</h3>
+                            <address><strong id="contact-email"><a href="mailto:info@carvedcreations.com">info@carvedcreations.com</a></strong></address>
+                        </div>
+                                                
+                    </div>
+                </section>
+            </main>
+<!-- ************************** Main - End ************************** -->
+
+<!-- ************************** BACK-TO-TOP Link - Start ************************** -->
+        <!-- <div class="back-to-top-btn" style="text-align: right;">
+            <a href="#header-wrapper">back-to-top</a>
+        </div> -->
+<!-- ************************** BACK-TO-TOP Link - End ************************** -->
+
+
+<!-- ************************** Footer - Start ************************** -->
+
+            <footer class="footer">                 <!--role="contentinfo" lt. w3c unnecessary for footer-->
+                <div id="footer-wrapper">
+                    <div class="footer-box" id="footer-copy">
+                        <p><small>&copy; Copyright 2023. All Rights Reserved</small></p>
+                    </div>
+                    
+                    <nav  class="footer-box" id="footer-nav">           <!--role="navigation" lt. w3c unnecessary for nav-->
+                        <ul>
+                            <li class="li-nav"><a href="../index.html"><small>Home</small></a></li>
+                            <li class="li-nav"><a href="about.html"><small>About</small></a></li>
+                            <li class="li-nav"><a href="gallery.html"><small>Gallery</small></a></li>
+                            <li class="li-nav"><a href="blog.html"><small>Blog</small></a></li>
+                            <li class="li-nav"><a href="contact.html"><small>Contact</small></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer> 
+<!-- ************************** Footer - End ****************************** -->
+
+    </body>         <!-- Grundgerüst body-Tag - End -->
+
+</html>             <!-- Grundgerüst html-Tag - End -->

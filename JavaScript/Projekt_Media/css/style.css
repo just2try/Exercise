@@ -1,0 +1,223 @@
+*{
+    font-family: Trebuchet MS, Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body{
+    background-image: url(../bilder/hintergrund.gif);
+    background-repeat: repeat-y;
+    background-position: center;
+    
+}
+
+h1 {
+    font-size: 1.5rem; /*18px*/
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 1.16rem; /*14px*/
+    margin: 0 0 10px 0;
+}
+
+h3{
+    font-size: 1rem; /*12px*/
+    margin: 10px 0 10px 0;
+}
+
+/* ####### Nav + Main-Bereich - Style ####### */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 2.5rem;  /*30px*/
+}
+
+.wrapper {
+    width: 60.84rem; /*730px;*/
+    /*text-align: center;*/
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.logobox {                                         /* Positionierung der Bilder mittels flex */
+    flex-direction: row-reverse;
+    height: 19.83rem;                            /*238px;*/
+}
+
+.flex {
+    display: flex;
+}
+
+.justify{
+    justify-content: space-between;
+}
+/* 
+#mediapic, #medialogo, #mediatext {             Positionierung der Bilder mittels float
+    height: 238px;
+    float: right;
+}
+*/
+
+.navigation{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0.4167rem; /*5px;*/
+    /*clear: both;*/
+}
+
+.navigation a{
+    font-size: 1.25rem; /*15px*/
+    font-weight: bold;
+}
+
+.article-margin{
+    margin: 0 0 10px 0;
+}
+
+.img-margin{
+    margin: 0 10px 10px 0;
+}
+
+.banner-margin{
+    margin: 0 30px 10px 30px; 
+}
+
+.address-margin{
+    margin: 15px 0 20px 0;
+}
+
+.block-margin{
+    margin: 10px 40px 0 40px;
+}
+
+main img {
+    border: 2px solid black;
+}
+
+.float-le{
+    float: left;
+}
+
+.content {
+    padding: 0.83rem /*10px*/;
+    color: white;
+    min-height: calc(100vh - 24px - 267px);     /* Berechnet (kalkuliert) die minimale Höhe des Content-Bereich
+                                                     --> 100% view height des Screen - 24px (Höhe des Footers) - 267px (Höhe des Headers)  */
+}
+
+main a{
+    color: white;
+}
+
+.content-left {
+    width: 390px;
+    text-align: justify;
+}
+
+.content-right {
+    width: 290px;
+    text-align: center;
+}
+
+.content-right h2{
+    text-align: start;
+    margin: 20px 0 10px 45px;
+}
+
+#close{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 20px 117px 0 0;  
+}
+
+.flexbox{
+    margin: 0 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.flexelement{
+    margin: 0 1% 1% 0;
+}
+
+.gallery img{
+    transition: 0.5;
+}
+
+/* Mittels "translate" 2-Dimensionale Effekte erzeugen
+    parameter 1 => verschiebt Element auf der x-Achse (horizontal)
+    parameter 2 => verschiebt Element auf der y-Achse (vertikal)
+*/
+#bild1:hover{
+    transform: translate(-5px, -5px);
+    /* transform: scale(1.1);   ## die "scale" Funktion Skaliert(vergrößert/verkleinert) das Element um das jeweils übergebene Vielfache  */  
+}
+#bild2:hover{
+    transform: translate(5px, -5px);
+    /* transform: scale(1.1);*/
+}
+#bild3:hover{
+    transform: translate(-5px, 5px);
+    /* transform: scale(1.1);*/
+}
+#bild4:hover{
+    transform: translate(5px, 5px);
+    /* transform: scale(1.1);*/
+}
+
+/* #######  Kontakt Formular - Style ####### */
+
+label, input, select, textarea, button{
+    margin: 5px;
+}
+
+button{
+    padding: 5px 10px;
+}
+
+#betreff, form{
+    margin-bottom: 15px;
+}
+
+noscript p, p.kontakt{
+    margin: 15px 0 0;
+}
+
+noscript p a, p.kontakt a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* #######  Footer - Style ####### */
+
+.footer {
+    background: #333;
+    padding: 0.4167rem /*5px*/;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+

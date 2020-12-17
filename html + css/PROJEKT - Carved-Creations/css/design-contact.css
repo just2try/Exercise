@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/**============= HEADER =============**/
+
+#nav-contact a{
+    color: goldenrod;
+}
+
+/**================MAIN================**/
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+
+.content-box p{
+    font-family: Quattro;
+    font-size: 0.9em;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.content-box{
+    padding: 20px 15px 10px 15px;
+}
+
+.contact-box-1 > p{
+    text-align: justify;
+}
+.contact-box-1{
+    background-color: white;
+    width: 425px;
+    margin: 0 10px 0 0;
+    padding: 0 5px 0 0;
+}
+
+.contact-box-1 a{
+    text-decoration: underline;
+}
+
+.contact-box-2{
+    width: 425px;
+    height: max-content;
+    text-align: center;
+    background-color: rgb(236, 231, 231);
+    color: gray;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+address{
+    font-style: normal;
+}
+
+#contact-email{
+    text-transform: none;
+}
+
+.contact-area strong{
+    color:black;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+/**==================Kontakt Formular==============**/
+fieldset{
+    margin: 0 0 100px 0;
+    border: none;
+    overflow: hidden;
+}
+
+.form-field{
+    border-color: goldenrod;
+    background-color: #f1f1f1;
+    cursor: text;
+    width: 420px;
+    font-family: inherit;
+    font-size: 1em;
+    border-width: 2px;
+}
+
+input{
+    height: 25px;
+}
+
+textarea{
+    resize: none;                   /*====== Größe des Textfensters darf nicht vom User geändert werden ===*/
+}
+
+input:invalid{                      /*====== Test auf @ in Email-Adresse ===*/
+    border: 2px solid red;         /*==== wenn Test invalid roter Rahmen ===*/ 
+}
+
+#btn-submit{
+    color: goldenrod;
+    font-family: Oswald;
+    margin-right: 15.625rem;  /*(250px;)*/
+}
+
+#btn-reset{
+    color: goldenrod;
+    font-family: Oswald;
+}
+
+
+/**================Back to Top Button================**/
+
+.back-to-top-btn a{
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/bg-time.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30%;
+    
+}
+

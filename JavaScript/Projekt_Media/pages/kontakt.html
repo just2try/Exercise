@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Magic - The Worldwide Media – Kontakt</title>
+
+        <meta name="description" content="Kontakt mit HTML, CSS und JavaScript">
+        <meta name="keywords" content="kontakt, html, css, JavaScript, Skriptsprachen, Websprachen, Medien">
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Einbindung der eigenen CSS Datei -->
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <!-- Einbindung der Lightbox CSS Datei -->
+        <link rel="stylesheet" href="../css/lightbox.css">
+        <!-- <script type="text/javascript" src="../js/funktionen-kontakt.js"></script>          ## am Ende eingebunden! -->
+
+    </head>
+    <body>
+                    
+            <header class="wrapper">
+
+                <div id="logo" class="logobox flex">
+                    <a id="medialogo" href="../index.html"><img src="../bilder/media_magic.gif" alt="Firmen Logo - Magic Media" title="Magic Media - Logo"></a>
+                    <img id="mediapic" src="../bilder/header_bild.jpg" alt="Media Bilder">
+                    <img id="mediatext" src="../bilder/header_text.jpg" alt="Media Bilder">
+                </div>
+
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Magic Media</a>
+                        </li>
+                        <li>
+                            <a href="../pages/produktionen.html">Produktionen</a>
+                        </li>
+                        <li>
+                            <a href="../pages/kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main role="main" class="wrapper content flex justify">
+                
+                <section class="content-left">
+                    <h1>Kontakt mit HTML, CSS und Javascript</h1>
+
+                    <!-- Kontakt-Formular erstellen -->
+                    <form action="action.php" method="post" id="formular" autocomplete="off">                  <!-- sendet (postet) u. speichert die Daten an Server in action.php / Auto-Vervollst. aus -->
+                        
+                        <label for="gender">Anrede:</label><br>
+                        <select name="gender" id="gender">
+                            <option selected="selected" value="male">Herr</option>
+                            <option value="female">Frau</option>
+                        </select><br>
+
+                        <label for="fname">Vorname:</label> <br>
+                        <input type="text" name="fname" id="fname" required><br>
+                        
+                        <label for="lname">Nachname:</label><br>
+                        <input type="text" name="lname" id="lname" required><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email"><br>
+                        
+                        <label for="betreff">Betreff:</label><br>
+                        <input type="text" name="betreff" id="betreff"><br>
+
+                        <p>Bitte schicken sie mir Informationen über foldende Themen zu: <br>
+                            <input id="html" type="checkbox" name="scriptlanguage" value="send_html">
+                            <label for="html">HTML</label>
+                            <input id="css" type="checkbox" name="scriptlanguage" value="send_css">
+                            <label for="css">CSS</label>
+                            <input id="javascript" type="checkbox" name="scriptlanguage" value="send_js">
+                            <label for="javascript">JavaScript</label>
+                        </p>
+                        <br>
+
+                        <label for="massage">Mitteilung:</label><br>
+                        <textarea name="massage" cols="40" rows="7" id="massage" placeholder="Ihre Mitteilung"></textarea><br>
+
+                        <button type="submit" id="btn-submit">Abschicken</button>
+                        <button type="reset" id="btn-reset">Zurücksetzen</button>
+                    </form>
+
+                    <!-- Kontakt Mail-Adressen werden mit JavaScript eingefügt. -->
+
+
+                    <!-- Fallback wenn JavaScript ausgeschaltet ist -->
+                    <noscript>
+                        <h2>Media Magic - Team</h2>
+                        <p>Kontakt: <a href="mailto:rainer@magic.de">rainer[at]magic.de</a></p>
+                        <p>Kontakt: <a href="mailto:hanna@magic.de">hanna[at]magic.de</a></p>
+                        <p>Kontakt: <a href="mailto:frauke@magic.de">frauke[at]magic.de</a></p>
+                        <p>Kontakt: <a href="mailto:philip@magic.de">philip[at]magic.de</a></p>
+                    </noscript>
+                   
+                </section>
+
+                <aside class="content-right">
+                    <address class="address-margin">
+                        <h3>Magic Media Studios</h3>
+                        <p> Fake Street<br>
+                        Level 5, Door 123<br>
+                        1010 WHATEVER and WHEREEVER</p>
+                    </address>
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77622.32360641098!2d13.312361240386966!3d52.556994445111314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0ed8b84ff326fc1!2sVolta%20Studios!5e0!3m2!1sde!2sde!4v1601305917903!5m2!1sde!2sde"
+                        width="250"
+                        height="250"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0">
+                    </iframe>
+                
+                    <br><br>
+
+                </aside>
+            </main>
+
+            <footer class="footer wrapper">
+                <!-- mittels JS das Jahr des aktuellen Datums ausgeben -->
+                <p>&copy; by Media Magic <script>document.write(new Date().getFullYear());</script> | <a href="#logo">Zum Seitenanfang</a></p>
+            </footer>
+        <!-- Einbindung der eigenen JS Datei -->
+        <script type="text/javascript" src="../js/funktionen-kontakt.js"></script>
+        <!-- Einbindung der Lightbox JS Datei -->
+        <script src="../js/lightbox-plus-jquery.js"></script>   
+
+    </body>
+</html>

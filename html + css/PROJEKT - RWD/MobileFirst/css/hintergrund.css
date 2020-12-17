@@ -1,0 +1,29 @@
+﻿/****************************/
+/* 0 bis 759 Pixel   		*/
+/****************************/
+@media only screen and (max-width: 759px) {
+		body {
+			background: url(../bilder/hg1.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+}
+
+/****************************/
+/* 760 bis 979 Pixel   		*/
+/****************************/
+@media only screen and (min-width: 760px) and (max-width: 979px) {
+		body {
+			background: url(../bilder/hg2.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+}
+
+/****************************/
+/* 980 bis Unendlich Pixel  */
+/****************************/
+@media only screen and (min-width: 980px) {
+		body {
+			background: url(../bilder/hg3.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+}

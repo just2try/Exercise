@@ -1,0 +1,8 @@
+user-agent: *
+disallow: /js
+disallow: /css
+disallow: /img
+disallow: /content
+disallow: /fonts
+
+sitemap: https://www.carved-creations.de/wooden-sitemap.xml

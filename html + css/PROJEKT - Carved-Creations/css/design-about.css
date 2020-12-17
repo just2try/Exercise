@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/**============= HEADER =============**/
+
+#nav-about a{
+    color: goldenrod;
+}
+
+/**================MAIN================**/
+
+.content-box{
+    padding: 20px 10px 10px 10px;
+}
+
+h1, h3{
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    color: #666565;
+}
+
+.content-box p {
+    font-family: Quattro;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.about-box-1 {
+    background-color: white;
+    width: 435px;
+    margin: 0 10px 0 0;
+    padding: 0 5px 0 5px;
+}
+
+.about-box-1 a{
+    text-decoration: underline;
+}
+
+.templates a{
+    text-decoration: none;
+}
+
+.about-box-2 {
+    width: 435px;
+    height: max-content;
+    text-align: center;
+    background-color: rgb(236, 231, 231);
+    color: gray;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.contact-area{
+    line-height: 1.3rem;
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 10px;    
+}
+
+address{
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.contact-area strong{
+    color:black;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/**================Back to Top Button================**/
+
+.back-to-top-btn a{
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/bg-time.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30%;
+}

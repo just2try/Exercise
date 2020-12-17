@@ -1,0 +1,167 @@
+/*Allgemeine Einstellungen werden OHNE Query definiert und gelten somit für alle*/
+
+/* "Ansage an ALLE mit *  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/*Schrift-font "Oswald" wird eingebunden*/
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald.eot);
+    src: url(../fonts/Oswald.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Oswald.ttf) format('truetype'),
+    url(../fonts/Oswald.woff) format('woff'),
+    url(../fonts/Oswald.svg) format('svg'),
+    url(../fonts/Oswald.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quattro';
+    src: url(../fonts/QuattrocentoSans-Regular.eot);
+    src: url(../fonts/QuattrocentoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/QuattrocentoSans-Regular.ttf) format('truetype'),
+    url(../fonts/QuattrocentoSans-Regular.woff) format('woff'),
+    url(../fonts/QuattrocentoSans-Regular.svg) format('svg'),
+    url(../fonts/QuattrocentoSans-Regular.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: Oswald, Verdana, Arial, Geneva, Tahoma, sans-serif;
+    font-size: 1rem; /*r steht für root = dem Browser / Standard im Browser 16px*/
+    background: rgb(112, 73, 47);
+    background: linear-gradient(to right, rgba(0,0,0,1) 10%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 90%),
+                url(../img/bg-body.png) 50%;                                                                                    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+/*background: -moz-linear-gradient(left, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 85%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(left, rgba(0,0,0,1) 20%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 70%,rgba(0,0,0,1) 85%); /* Chrome10-25,Safari5.1-6 */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+/*main{
+    display: flex;
+    justify-content: center;
+}*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+ul small{
+    font-size: 0.75rem;                     /*12px*/
+}
+
+/**============= HEADER =============**/
+
+.header{
+    background-color: black;
+    height: 6.25rem;                    /*100px;*/
+    border-bottom: 0.0625px solid white;  /*1px*/
+}
+
+#header-wrapper{
+    width: 56.25rem; /*900px*/
+    height: 6.25rem; /*100px*/
+    margin: 0 auto;
+    /*box-sizing: border-box;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-box li{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-box li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-box li a:hover{
+    color: goldenrod;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+.header-box li:first-child a{
+    color:goldenrod;
+}
+
+/**================Back to Top Button================**/
+
+.back-to-top-btn a{
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/bg-time.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30%;
+}
+
+/**================Footer================**/
+
+.footer{
+    background-color: goldenrod;
+    height: 50px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    /*box-shadow: 0 0 5px black;*/
+    /*overflow: hidden;*/
+}
+
+#footer-wrapper{
+    width: 900px;
+    /*margin: 0 auto;*/
+    /*box-sizing: border-box;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box{
+    display: flex;
+    align-items: center;
+}
+
+#footer-copy{
+    color: #514239;
+}
+
+.footer-box ul{
+    text-transform: uppercase;
+}
+
+.footer-box li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.footer-box li a{
+    color: #514239;
+}
+
+p small{
+    font-size: 0.875rem;
+}
