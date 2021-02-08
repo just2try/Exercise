@@ -68,8 +68,8 @@ $p = "";
         elseif($p == 'signup'){
             $page = 'pages/signup.php';
         }
-        elseif($p == 'signedup'){
-            $page = 'pages/signedup.php';
+        elseif($p == 'profil'){
+            $page = 'pages/profil.php';
         }
         elseif($p == 'logout'){
             echo '<script>alert("You have successfully loged out.")</script>';

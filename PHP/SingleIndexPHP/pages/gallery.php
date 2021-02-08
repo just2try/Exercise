@@ -1,17 +1,24 @@
-<div id="">
-    <h1>Bildergalerie</h1>
+
+<div class="button-wrapper">
+    <h1>Gallery</h1>
+</div>
+
+<div id="" class="main-wrapper">
 
     <div id="gbox1" class="flexbox gallery ">
-    <?php
-        include_once $_SERVER['url'] . 'inc/gallery_lightbox.inc.php';
+    <?php 
+        // include_once $_SERVER['url'] . 'inc/gallery_lightbox.inc.php';
         // include_once $_SERVER['url'] . 'inc/lightbox.inc.php';
     ?>
     </div>
+    
 
 <!-- ############################################################################################# -->
+    <h2>Lightbox</h2>
 
     <!-- Lightbox mittels "data-lightbox" und optionalem "data-title" erstellt -->
     <div id="gbox2" class="flexbox gallery ">
+
         <div id="länder">
             <a class="flexelement" href="./img/gallery/länder/deutschland.jpg" data-lightbox="Länder" data-title="Deutschland">
                 <img id="länder1" src="./img/gallery/länder/klein/deutschland_klein.jpg" alt="Deutschland" title="Länder - Deutschland">

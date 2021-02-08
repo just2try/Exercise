@@ -23,10 +23,10 @@ echo'
 	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/font-awesome-5.15.1.all.css">	
 	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/lightbox.min.css">
 
-	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/style.css">
 	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/nav.css">
 	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/footer.css">
 	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/login_signup_modul.css">
+	<link rel="stylesheet" href="' . $_SERVER['url'] . 'css/style.css">
 
 
         

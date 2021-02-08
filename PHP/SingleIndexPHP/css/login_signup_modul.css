@@ -1,13 +1,18 @@
 /* Eingabefelder stylen: volle Breite */
-input[type=text], input[type=password], input[type=email] {
+.signup-main input[type=text],
+.signup-main input[type=password],
+.signup-main input[type=email],
+.login-main input[type=text],
+.login-main input[type=password],
+.login-main input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
   }
-  
+
   /* Button stylen */
-  button {
+button {
     background: teal;
     color: white;
     margin: 10px 0;
@@ -19,7 +24,7 @@ input[type=text], input[type=password], input[type=email] {
     font-size: 1.2em;
   }
   
-  button:hover {
+button:hover {
     opacity: 0.8;
   }
   

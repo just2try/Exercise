@@ -5,7 +5,7 @@
             <!-- Navigations Menü mit Verlinkung auf index.php + page Angabe für -->
             <li class="logo"><a href="<?php echo $_SERVER['url'] . 'index.php?page=home'?>"><img src="img/code-optimization-3-64.png" alt="Code Logo"></a></li>
             <li class="item flip"><a href="<?php echo $_SERVER['url'] . 'index.php?page=home'?>"><span class="icon fas fa-home"></span>Home</a></li>
-            <li class="item flip"><a href="<?php echo $_SERVER['url'] . 'index.php?page=gallery'?>"><span class="icon fas fa-images"></span>Galerie</a></li>
+            <li class="item flip"><a href="<?php echo $_SERVER['url'] . 'index.php?page=gallery'?>"><span class="icon fas fa-images"></span>Gallery</a></li>
             <li class="item flip"><a href="<?php echo $_SERVER['url'] . 'index.php?page=contact'?>"><span class="icon fas fa-file-contract"></span>Contact</a></li>
             <?php
                 /* prüfen, ob Session "useruid" existiert (heißt, dass User eingeloggt ist), wenn ja zeige Profil und Logout Button */
